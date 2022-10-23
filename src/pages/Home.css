@@ -1,0 +1,133 @@
+.mainContainer {
+    padding: 4rem 9rem;
+    /* margin: 4rem 1.2rem; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 80%; */
+    width: 80%;
+    margin: 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+}
+
+.profile-img {
+    align-self: center;
+    width: 88px;
+}
+
+.profile-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.profile-icon {
+    width: 12.99px;
+    position: absolute;
+    left: 350%;
+    border: 1px dotted #D0D5DD;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-share {
+    display: none;
+}
+
+#slack {
+    display: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #101828;
+    cursor: pointer;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    background: #EAECF0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.slack {
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.git {
+    cursor: pointer;
+}
+.footer{
+    margin-top: 148px;
+    /* height: 160px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: #101828 1px; */
+    width: 100%;
+    border-top: 1px solid #EAECF0;
+    padding: 20px 0;
+}
+.zuri{
+    width: 130px;
+    /* height: 7.75px; */
+}
+.footer >span{
+    font-size: 14px;
+    color: #667085;
+}
+.i4g{
+    width:130px;
+    /* height: 7.75px; */
+
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .mainContainer {
+        padding: 4rem 1rem;
+    }
+
+    a {
+        max-width: 80%;
+        font-size: 14px;
+    }
+
+    .add {
+        display: none;
+    }
+
+    .profile-icon {
+        display: none;
+    }
+
+    .profile-share {
+        display: inline;
+        width: 12.99px;
+        position: absolute;
+        border: 1px dotted #D0D5DD;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        left: 150%;
+    }
+}
